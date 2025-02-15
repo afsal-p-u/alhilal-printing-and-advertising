@@ -37,7 +37,7 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16">
+    <section className="bg-gray-50 dark:bg-gray-900 py-16" id='about'>
       <div className="max-w-screen-xl mx-auto px-6 text-center">
         {/* Section Title */}
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-8">

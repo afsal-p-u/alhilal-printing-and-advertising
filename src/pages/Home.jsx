@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import img1 from "../assets/img1.jpg";
-import img2 from "../assets/img2.jpg";
+import img1 from "../assets/bag1.jpg";
+import img2 from "../assets/bag.jpg";
 
 const Home = () => {
   const images = [
@@ -41,7 +41,7 @@ const Home = () => {
           >
             <img
               src={src}
-              className="w-full h-full"
+              className="w-full h-full object-cover"
               alt={`carousel-item-${index + 1}`}
             />
           </div>

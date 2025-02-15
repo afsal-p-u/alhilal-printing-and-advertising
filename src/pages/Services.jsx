@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../assets/img1.jpg";
+import img1 from "../assets/bag1.jpg";
 import { ServicesItems } from "../utils/ServicesInfo";
 
 const Services = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16">
+    <section className="bg-gray-50 dark:bg-gray-900 py-16" id='services'>
       <div className="max-w-screen-xl mx-auto px-6 text-center">
         {/* Section Title */}
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-8">
@@ -15,11 +15,12 @@ const Services = () => {
         <div className="py-4 md:py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {ServicesItems?.map((item, i) => (
             <div
-              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 
+              dark:border-gray-700"
               key={i}
             >
               <a href="#">
-                <img className="rounded-t-lg" src={img1} alt="" />
+                <img className="rounded-t-lg h-48 w-full" src={img1} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -30,7 +31,7 @@ const Services = () => {
                 <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">
                   {item.description}
                 </p>
-                <a
+                {/* <a
                   href="#"
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
@@ -50,7 +51,7 @@ const Services = () => {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
