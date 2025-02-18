@@ -1,31 +1,40 @@
 import React, { useState } from "react";
 
+import image1 from '../assets/bag.jpg'
+import offsetPrinting1 from '../assets/Offset Printing/1.jpg'
+
 const Works = () => {
   // State to track the selected category
-  const [selectedCategory, setSelectedCategory] = useState("All categories");
+  const [selectedCategory, setSelectedCategory] = useState("Offset Printing");
 
   const categories = [
     {
-      label: "All categories",
+      label: "Offset Printing",
     },
     {
-      label: "Shoes",
+      label: "Digital Printing",
     },
     {
-      label: "Bags",
+      label: "Large Format Printing",
     },
     {
-      label: "Electronics",
+      label: "Corporate Printing",
     },
     {
-      label: "Gaming",
+      label: "Acrylic & Metal Engraving",
+    },
+    {
+      label: "Foam Board & Forex Board",
+    },
+    {
+      label: "Crystals, Trophies & Mementos",
     },
   ];
 
   // Array of images for each category
   const images = {
-    "All categories": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+    "Offset Printing": [
+      offsetPrinting1,
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
@@ -38,19 +47,27 @@ const Works = () => {
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg",
     ],
-    Shoes: [
+    "Digital Printing": [
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
     ],
-    Bags: [
+    "Large Format Printing": [
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
     ],
-    Electronics: [
+    "Corporate Printing": [
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
     ],
-    Gaming: [
+    "Acrylic & Metal Engraving": [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
+    ],
+    "Foam Board & Forex Board": [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
+    ],
+    "Crystals, Trophies & Mementos": [
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
       "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
     ],
@@ -88,11 +105,11 @@ const Works = () => {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 ">
           {images[selectedCategory].map((imageUrl, index) => (
-            <div key={index}>
+            <div key={index} className="h-[350px] w-full">
               <img
-                className="h-auto max-w-full rounded-lg"
+                className="h-full max-w-full w-full rounded-lg object-cover"
                 src={imageUrl}
                 alt={`image-${index}`}
               />

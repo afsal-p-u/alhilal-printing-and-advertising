@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import img1 from "../assets/bag1.jpg";
 import img2 from "../assets/bag.jpg";
@@ -22,6 +22,18 @@ const Home = () => {
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  // Auto change image every 15 seconds
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 10000); // 15 seconds
+
+    // Cleanup interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [images.length]); // Only recreate the interval if images.length changes
 
   return (
     <div
@@ -51,16 +63,11 @@ const Home = () => {
       {/* Slider controls */}
       <button
         type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group 
-        focus:outline-none"
+        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handlePrev}
         aria-label="Previous"
       >
-        <span
-          className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30
-         group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white
-          dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
             className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
             aria-hidden="true"
@@ -82,16 +89,11 @@ const Home = () => {
 
       <button
         type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group 
-        focus:outline-none"
+        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handleNext}
         aria-label="Next"
       >
-        <span
-          className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 
-        dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 
-        group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
             className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
             aria-hidden="true"
