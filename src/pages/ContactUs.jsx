@@ -27,7 +27,7 @@ const ContactUs = () => {
               Reach us instantly on WhatsApp.
             </p>
             <a
-              href="https://wa.me/11234567890"
+              href="wa.me/message/DGO6TX2WLOZ6H1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white 
@@ -85,7 +85,10 @@ const ContactUs = () => {
               Call Us
             </h3>
             <p className="text-gray-700 dark:text-gray-400 mb-4">
-              Reach us by phone anytime.
+              Reach us by phone anytime. <br /> 
+              <span className="font-medium text-black dark:text-white">
+                050 9454953, 050 1697888 
+              </span>
             </p>
             <a
               href="tel:+11234567890"

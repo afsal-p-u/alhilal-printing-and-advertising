@@ -1,26 +1,31 @@
+import corporateGifts from '../assets/services/corporate-gifts.jpg' 
+import digitalPrinting from '../assets/services/digital-printing.jpg' 
+import largeFormatPrinting from '../assets/services/large-formate-printing.jpg' 
+import offsetPrinting from '../assets/services/offset-printing.jpg' 
+
 export const ServicesItems = [
   {
-    image: "",
-    heading: "Model Making",
+    image: offsetPrinting,
+    heading: "Offset printing",
     description:
-      "We offer a wide range of model making services, including architectural models, engineering models, product models, and more. Our team of skilled model makers can create models of any size and complexity, using a variety of materials and techniques.",
+      "Our offset printing services provide high-quality, cost-effective solutions for large print runs. Whether you need brochures, catalogs, or business cards, we ensure vibrant colors and sharp details, making your brand stand out.",
   },
   {
-    image: "",
-    heading: "3D Printing",
+    image: digitalPrinting,
+    heading: "Digital printing",
     description:
-      "We also offer a wide range of 3D printing services, including prototyping, manufacturing, and model making. We have a state-of-the-art 3D printing facility equipped with the latest technology, allowing us to produce high-quality 3D prints in a variety of materials.",
+      "With our advanced digital printing technology, we deliver high-resolution prints with fast turnaround times. From small batch prints to personalized marketing materials, we offer customized printing solutions tailored to your needs.",
   },
   {
-    image: "",
-    heading: "Animation",
+    image: largeFormatPrinting,
+    heading: "Large format printing",
     description:
-      "We are also a leading animation company in Dubai. We offer a wide range of animation services, including 2D animation, 3D animation, and motion graphics. Our team of experienced animators can create high-quality animations for a variety of applications, including:",
+      "Our large format printing service is ideal for banners, posters, and signage. Using state-of-the-art printers, we produce crisp, high-quality prints that are perfect for both indoor and outdoor displays.",
   },
   {
-    image: "",
-    heading: "Trophies & Awards",
+    image: corporateGifts,
+    heading: "Corporate gifts",
     description:
-      "We are also a leading trophy shop in Dubai, offering a wide range of trophies, awards, and plaques. We can customize our trophies to meet your specific needs, and we offer a variety of engraving options.",
+      "We specialize in providing unique and customized corporate gifts that leave a lasting impression. Whether for clients, employees, or partners, our wide range of high-quality gifts can be branded to reflect your company’s identity.",
   },
 ];

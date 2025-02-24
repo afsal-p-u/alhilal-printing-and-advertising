@@ -20,7 +20,7 @@ const Services = () => {
               key={i}
             >
               <a href="#">
-                <img className="rounded-t-lg h-48 w-full" src={img1} alt="" />
+                <img className="rounded-t-lg h-48 w-full" src={item.image} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">
