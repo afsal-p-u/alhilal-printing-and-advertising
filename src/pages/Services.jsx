@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../assets/bag1.jpg";
 import { ServicesItems } from "../utils/ServicesInfo";
 
 const Services = () => {

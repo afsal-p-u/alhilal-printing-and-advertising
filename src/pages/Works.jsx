@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import image1 from '../assets/bag.jpg'
-import offsetPrinting1 from '../assets/Offset Printing/1.jpg'
+// import image1 from '../assets/bag.jpg'
+import offsetPrinting1 from '../assets/works/offset-printing/1.jpg'
 
 const Works = () => {
   // State to track the selected category
@@ -35,41 +35,19 @@ const Works = () => {
   const images = {
     "Offset Printing": [
       offsetPrinting1,
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg",
     ],
     "Digital Printing": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
     ],
     "Large Format Printing": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
     ],
     "Corporate Printing": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
     ],
     "Acrylic & Metal Engraving": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
     ],
     "Foam Board & Forex Board": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
     ],
     "Crystals, Trophies & Mementos": [
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
-      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
+      
     ],
   };
 
