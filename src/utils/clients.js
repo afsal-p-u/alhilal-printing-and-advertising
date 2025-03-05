@@ -2,7 +2,7 @@ import pullmanDowntown from "../assets/clients/pullman-downtown.jpg";
 import aasaGroup from "../assets/clients/aasa-group.jpg";
 import sportedAe from "../assets/clients/sported-ae.jpg";
 import pearlImperial from "../assets/clients/pearl-imperial.jpg";
-import ruqaya from "../assets/clients/Ruqaya.jpg";
+import ruqaya from "../assets/clients/ruqaya.jpg";
 import legend from "../assets/clients/legend.jpg";
 import dripBurgers from "../assets/clients/drip-burgers.jpg";
 import avenue from "../assets/clients/avenue.jpg";
