@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-
-import img1 from "../assets/bag1.jpg";
 import img2 from "../assets/bag.jpg";
 
 const Home = () => {
   const images = [
-    img1,
+    "https://www.youtube.com/embed/9W0GsiBpY98?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0", // Updated to remove logo and related videos
     img2,
   ];
 
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
@@ -23,13 +21,13 @@ const Home = () => {
     );
   };
 
-  // Auto change image every 15 seconds
+  // Auto change image every 22 seconds
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 10000); // 15 seconds
+    }, 22000); // 22 seconds interval
 
     // Cleanup interval when the component unmounts
     return () => clearInterval(intervalId);
@@ -46,16 +44,30 @@ const Home = () => {
         {images.map((src, index) => (
           <div
             key={index}
-            className={`absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out ${
-              index === activeIndex ? "block" : "hidden"
-            }`}
+            className={`absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 
+              ease-in-out ${index === activeIndex ? "block" : "hidden"}`}
             data-carousel-item
           >
-            <img
-              src={src}
-              className="w-full h-full object-cover"
-              alt={`carousel-item-${index + 1}`}
-            />
+            {index === 0 ? (
+              // Display YouTube video for the first index
+              <div className="relative w-full h-full">
+                <iframe
+                  width="100%"
+                  className="h-56 sm:h-[75vh] pointer-events-none"
+                  src={src}
+                  title="YouTube video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            ) : (
+              <img
+                src={src}
+                className="w-full h-full object-cover"
+                alt={`carousel-item-${index + 1}`}
+              />
+            )}
           </div>
         ))}
       </div>
