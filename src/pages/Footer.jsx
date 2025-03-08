@@ -14,7 +14,7 @@ const Footer = () => {
                 alt="FlowBite Logo"
               />
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Alhilal Printing
+                Alhilal Printing & Advertising
               </span>
             </a>
           </div>
@@ -25,13 +25,13 @@ const Footer = () => {
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="https://flowbite.com/" class="hover:underline">
-                    Flowbite
+                  <a href="" class="hover:underline">
+                    
                   </a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" class="hover:underline">
-                    Tailwind CSS
+                  <a href="" class="hover:underline">
+                    
                   </a>
                 </li>
               </ul>
@@ -43,18 +43,18 @@ const Footer = () => {
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href=""
                     class="hover:underline "
                   >
-                    Github
+                    
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href=""
                     class="hover:underline"
                   >
-                    Discord
+                    
                   </a>
                 </li>
               </ul>
@@ -81,9 +81,9 @@ const Footer = () => {
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
+            © 2025{" "}
             <a href="https://flowbite.com/" class="hover:underline">
-              Flowbite™
+              AlhilalPrinting&Adevertising™
             </a>
             . All Rights Reserved.
           </span>

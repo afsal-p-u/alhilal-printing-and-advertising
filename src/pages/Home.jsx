@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import img2 from "../assets/bag.jpg";
 
 const Home = () => {
   const images = [
     "https://www.youtube.com/embed/9W0GsiBpY98?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0", // Updated to remove logo and related videos
-    img2,
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

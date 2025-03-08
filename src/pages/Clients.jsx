@@ -2,7 +2,7 @@ import { clientLists } from '../utils/clients';
 
 const Clients = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16" id="sponsors">
+    <section className="bg-gray-50 dark:bg-gray-900 py-16" id="clients">
       <div className="max-w-screen-xl mx-auto px-6 text-center">
         {/* Section Title */}
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-8">

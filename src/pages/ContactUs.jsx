@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16">
+    <section className="bg-gray-50 dark:bg-gray-900 py-16" id="contact">
       <div className="max-w-screen-xl mx-auto px-6 text-center">
         {/* Section Title */}
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-8">
@@ -91,7 +91,7 @@ const ContactUs = () => {
               </span>
             </p>
             <a
-              href="tel:+11234567890"
+              href="tel:+971 050 9454953"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white 
               bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 
               dark:bg-blue-600 dark:hover:bg-blue-700"
