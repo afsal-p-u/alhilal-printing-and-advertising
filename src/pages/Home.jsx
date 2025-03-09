@@ -39,11 +39,11 @@ const Home = () => {
       data-carousel="static"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-[75vh] overflow-hidden sm:h-[75vh]" id="home">
+      <div className="relative h-[80vh] overflow-hidden sm:h-[80vh] bg-black " id="home">
         {images.map((src, index) => (
           <div
             key={index}
-            className={`absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 
+            className={`absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 
               ease-in-out ${index === activeIndex ? "block" : "hidden"}`}
             data-carousel-item
           >
@@ -51,7 +51,7 @@ const Home = () => {
               // Display local video for the first index
               <div className="relative w-full h-full">
                 <video
-                  className="w-full h-full object-contain"
+                  className="w-full h-full"
                   autoPlay
                   muted
                   loop
