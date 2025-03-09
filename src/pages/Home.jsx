@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import video from '../assets/video/video.mp4';
 
 const Home = () => {
   const images = [
-    "https://www.youtube.com/embed/9W0GsiBpY98?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0", // Updated to remove logo and related videos
+    video, // Updated to enable autoplay
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,7 +39,7 @@ const Home = () => {
       data-carousel="static"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden sm:h-[75vh]">
+      <div className="relative h-[75vh] overflow-hidden sm:h-[75vh]" id="home">
         {images.map((src, index) => (
           <div
             key={index}
@@ -47,24 +48,32 @@ const Home = () => {
             data-carousel-item
           >
             {index === 0 ? (
-              // Display YouTube video for the first index
+              // Display local video for the first index
               <div className="relative w-full h-full">
+                <video
+                  className="w-full h-full object-contain"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            ) : (
+              // Display YouTube video for the second index
+              <div className="relative w-full h-[75vh]">
                 <iframe
                   width="100%"
-                  className="h-56 sm:h-[75vh] pointer-events-none"
-                  src={src}
+                  className="h-[75vh] w-full pointer-events-none"
                   title="YouTube video"
+                  src={src}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
-            ) : (
-              <img
-                src={src}
-                className="w-full h-full object-cover"
-                alt={`carousel-item-${index + 1}`}
-              />
             )}
           </div>
         ))}

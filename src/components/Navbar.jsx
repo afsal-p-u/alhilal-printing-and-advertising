@@ -18,7 +18,7 @@ const Navbar = () => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={logo} className="h-8 rounded-full" alt="Flowbite Logo" />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl max-sm:text-md font-semibold whitespace-nowrap dark:text-white">
             Al Hilal Printing & Advertising
           </span>
         </a>
@@ -62,10 +62,11 @@ const Navbar = () => {
           dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
-                href="#"
+                href="#home"
                 className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent 
                 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
+                onClick={toggleMenu}
               >
                 Home
               </a>
@@ -76,6 +77,7 @@ const Navbar = () => {
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                onClick={toggleMenu}
               >
                 Services
               </a>
@@ -83,6 +85,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#works"
+                onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Works
@@ -91,6 +94,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
+                onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About Us
@@ -99,6 +103,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
+                onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -109,9 +114,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#clients"
+                onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
-                dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent max-lg:hidden"
               >
                 Clients
               </a>
@@ -119,9 +125,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#location"
+                onClick={toggleMenu}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
-                dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent max-lg:hidden"
               >
                 Location
               </a>

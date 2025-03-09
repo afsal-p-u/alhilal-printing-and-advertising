@@ -14,7 +14,7 @@ const Services = () => {
         <div className="py-4 md:py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {ServicesItems?.map((item, i) => (
             <div
-              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 
+              className="min-w-[240px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 
               dark:border-gray-700"
               key={i}
             >
