@@ -39,7 +39,7 @@ const Home = () => {
       data-carousel="static"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-[80vh] overflow-hidden sm:h-[80vh] bg-black " id="home">
+      <div className="relative h-56 sm:h-96 overflow-hidden bg-black " id="home">
         {images.map((src, index) => (
           <div
             key={index}
