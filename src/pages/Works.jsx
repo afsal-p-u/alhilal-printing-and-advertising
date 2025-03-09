@@ -34,21 +34,21 @@ const Works = () => {
     {
       label: "Digital Printing",
     },
-    {
-      label: "Large Format Printing",
-    },
+    // {
+    //   label: "Large Format Printing",
+    // },
     {
       label: "Corporate Printing",
     },
-    {
-      label: "Acrylic & Metal Engraving",
-    },
-    {
-      label: "Foam Board & Forex Board",
-    },
-    {
-      label: "Crystals, Trophies & Mementos",
-    },
+    // {
+    //   label: "Acrylic & Metal Engraving",
+    // },
+    // {
+    //   label: "Foam Board & Forex Board",
+    // },
+    // {
+    //   label: "Crystals, Trophies & Mementos",
+    // },
   ];
 
   // Array of images for each category
@@ -62,18 +62,17 @@ const Works = () => {
     "Digital Printing": [
       dg1,
     ],
-    "Large Format Printing": [
-    ],
+    // "Large Format Printing": [
+    // ],
     "Corporate Printing": [
       cp1, cp2,
     ],
-    "Acrylic & Metal Engraving": [
-    ],
-    "Foam Board & Forex Board": [
-    ],
-    "Crystals, Trophies & Mementos": [
-      
-    ],
+    // "Acrylic & Metal Engraving": [
+    // ],
+    // "Foam Board & Forex Board": [
+    // ],
+    // "Crystals, Trophies & Mementos": [
+    // ],
   };
 
   // Function to handle category change

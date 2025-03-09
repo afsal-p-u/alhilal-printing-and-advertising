@@ -27,7 +27,7 @@ const ContactUs = () => {
               Reach us instantly on WhatsApp.
             </p>
             <a
-              href="wa.me/message/DGO6TX2WLOZ6H1"
+              href="http://wa.me/971509454953"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white 
