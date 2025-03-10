@@ -9,9 +9,9 @@ const AboutUs = () => {
           About Us
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Column 1: Image */}
-          <div className="flex justify-center items-center h-[80vh]">
+          <div className="flex justify-center items-center h-[70vh] md:h-[85vh] sm:h-[75vh]">
             <img
               src={aboutUs}
               alt="About Us"

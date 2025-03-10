@@ -18,7 +18,7 @@ const Footer = () => {
                   Al Hilal Printing Services
                 </p>
                 <p className="text-xs font-medium dark:text-white">
-                  Advertising & Gifts
+                  Production, Advertising & Gifts
                 </p>
               </div>
             </a>
