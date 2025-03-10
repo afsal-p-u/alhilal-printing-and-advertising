@@ -18,9 +18,13 @@ const Navbar = () => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={logo} className="h-8 rounded-full" alt="Flowbite Logo" />
-          <span className="self-center text-xl max-sm:text-md font-semibold whitespace-nowrap dark:text-white">
-            Al Hilal Printing & Advertising
-          </span>
+          {/* <span className="self-center text-xl max-sm:text-md font-semibold whitespace-nowrap dark:text-white"> */}
+            <div className="flex flex-col items-center">
+              <p className="dark:text-white font-semibold text-lg">Al Hilal Printing Services</p>
+              <p className="text-xs font-medium dark:text-white">Production, Advertising & Gifts</p>
+            </div>
+            {/* Al Hilal Printing & Advertising */}
+          {/* </span> */}
         </a>
 
         {/* Hamburger Button */}

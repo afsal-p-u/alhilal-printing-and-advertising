@@ -13,9 +13,14 @@ const Footer = () => {
                 class="h-8 me-3 rounded-full"
                 alt="FlowBite Logo"
               />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Alhilal Printing & Advertising
-              </span>
+              <div className="flex flex-col items-center">
+                <p className="dark:text-white font-semibold text-lg">
+                  Al Hilal Printing Services
+                </p>
+                <p className="text-xs font-medium dark:text-white">
+                  Advertising & Gifts
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -40,6 +45,15 @@ const Footer = () => {
                     target="_blank"
                   >
                     Whatsapp
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="mailto:alhilalsales@gmail.com"
+                    class="hover:underline"
+                    target="_blank"
+                  >
+                    Gmail
                   </a>
                 </li>
               </ul>

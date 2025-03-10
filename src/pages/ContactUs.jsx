@@ -54,7 +54,7 @@ const ContactUs = () => {
               Drop us an email and we’ll get back to you as soon as possible.
             </p>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:alhilalsales@gmail.com"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white 
               bg-red-500 rounded-lg hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 
               dark:bg-red-600 dark:hover:bg-red-700"

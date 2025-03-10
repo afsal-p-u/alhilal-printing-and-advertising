@@ -22,7 +22,7 @@ const Services = () => {
                 <img className="rounded-t-lg h-48 w-full" src={item.image} alt="" />
               </a>
               <div className="p-5">
-                <a href="#">
+                <a href="http://wa.me/971509454953" target="_blank">
                   <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
                     {item.heading}
                   </h5>
