@@ -1,7 +1,7 @@
 export { default as Home } from './Home'
 export { default as Services } from './Services'
 export { default as AboutUs } from './AboutUs'
-export { default as Works } from './Works'
+export { default as Gallery } from './Gallery'
 export { default as Footer } from './Footer'
 export { default as Location } from './Location'
 export { default as ContactUs } from './ContactUs'

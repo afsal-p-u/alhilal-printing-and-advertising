@@ -1,26 +1,33 @@
 import React, { useState } from "react";
 
 // all
-// gift
-import gift1 from "../assets/works/all/gift1.jpg";
-import gift2 from "../assets/works/all/gift2.jpg";
+import i1 from "../assets/gallery/all/1.jpg";
+import i2 from "../assets/gallery/all/2.jpg";
+import i3 from "../assets/gallery/all/3.jpg";
+import i4 from "../assets/gallery/all/4.jpg";
+import i5 from "../assets/gallery/all/5.jpg";
+import i6 from "../assets/gallery/all/6.jpg";
+import i7 from "../assets/gallery/all/7.jpg";
+import i8 from "../assets/gallery/all/8.jpg";
+import i9 from "../assets/gallery/all/9.jpg";
+import i10 from "../assets/gallery/all/10.jpg";
+import i11 from "../assets/gallery/all/11.jpg";
+import i12 from "../assets/gallery/all/12.jpg";
 
-// branding
-import branding1 from "../assets/works/all/branding1.jpg";
+import i13 from "../assets/gallery/all/13.jpg";
+import i14 from "../assets/gallery/all/14.jpg";
+import i15 from "../assets/gallery/all/15.jpg";
+import i16 from "../assets/gallery/all/16.jpg";
+import i17 from "../assets/gallery/all/17.jpg";
+import i18 from "../assets/gallery/all/18.jpg";
+import i19 from "../assets/gallery/all/19.jpg";
+import i20 from "../assets/gallery/all/20.jpg";
+import i21 from "../assets/gallery/all/21.jpg";
+import i22 from "../assets/gallery/all/22.jpg";
+import i23 from "../assets/gallery/all/23.jpg";
+import i24 from "../assets/gallery/all/24.jpg";
 
-// separate
-// digital printing
-import dg1 from "../assets/works/digital-printing/dg1.jpg";
-
-// corporate printing
-import cp1 from "../assets/works/corporate-printing/cp1.jpg";
-import cp2 from "../assets/works/corporate-printing/cp2.jpg";
-
-// offset-printing
-import offsetPrinting1 from "../assets/works/offset-printing/1.jpg";
-import op2 from "../assets/works/offset-printing/op2.jpg";
-
-const Works = () => {
+const Gallery = () => {
   const [moreImages, setMoreImages] = useState(false)
   // State to track the selected category
   // const [selectedCategory, setSelectedCategory] = useState("All");
@@ -77,24 +84,33 @@ const Works = () => {
   // };
 
   const imagesMain = [
-    offsetPrinting1,
-    gift1,
-    branding1,
-    cp1,
-    dg1,
-    op2,
-    gift2,
-    cp2,
+    i1,
+    i2,
+    i3,
+    i4,
+    i5,
+    i6,
+    i7,
+    i8,
+    i9,
+    i10,
+    i11,
+    i12
   ];
+
   const exploreMore = [
-    offsetPrinting1,
-    gift1,
-    branding1,
-    cp1,
-    dg1,
-    op2,
-    gift2,
-    cp2,
+    i13,
+    i14,
+    i15,
+    i16,
+    i17,
+    i18,
+    i19,
+    i20,
+    i21,
+    i22,
+    i23,
+    i24
   ];
 
   const handleMoreImage = () => {
@@ -180,4 +196,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Gallery;

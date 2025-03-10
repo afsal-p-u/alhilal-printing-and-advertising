@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutUs, ContactUs, Footer, Home, Location, MoreInfo, Services, Clients, Works } from './pages'
+import { AboutUs, ContactUs, Footer, Home, Location, Services, Clients, Gallery } from './pages'
 import Navbar from './components/Navbar'
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Services />
-      <Works />
+      <Gallery />
       <AboutUs />
       <ContactUs />
       <Clients />

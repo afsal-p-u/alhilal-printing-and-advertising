@@ -10,6 +10,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleClose = () => {
+    setIsOpen(false)
+  }
+
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 left-0 z-99">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -70,7 +74,7 @@ const Navbar = () => {
                 className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent 
                 md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
-                onClick={toggleMenu}
+                onClick={toggleClose}
               >
                 Home
               </a>
@@ -81,7 +85,7 @@ const Navbar = () => {
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                onClick={toggleMenu}
+                onClick={toggleClose}
               >
                 Services
               </a>
@@ -89,7 +93,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#gallery"
-                onClick={toggleMenu}
+                onClick={toggleClose}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Gallery
@@ -98,7 +102,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                onClick={toggleMenu}
+                onClick={toggleClose}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About Us
@@ -107,7 +111,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                onClick={toggleMenu}
+                onClick={toggleClose}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -118,7 +122,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#clients"
-                onClick={toggleMenu}
+                onClick={toggleClose}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:hidden"
@@ -129,7 +133,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#location"
-                onClick={toggleMenu}
+                onClick={toggleClose}
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent 
                 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:hidden"

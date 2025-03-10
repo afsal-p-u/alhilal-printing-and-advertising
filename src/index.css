@@ -4,4 +4,5 @@
 * {
   font-family: "Outfit", serif;
   /* background: #111827; */
+  scroll-behavior: smooth;
 }
